@@ -41,7 +41,7 @@ def feladat3():
     import random
 
     gondoltSzam=random.randrange(1,6)
-    bekertSzam=int(input("Adj meg egy számot! "))
+    bekertSzam=int(input("Adj meg egy számot 1 és 5 között! "))
     if (0<bekertSzam<6):
         if (gondoltSzam>bekertSzam):
             print(f"A gép nagyobb számra gondolt: {gondoltSzam}")
@@ -52,5 +52,57 @@ def feladat3():
     else:
         print("Nem jó értéket adtál meg.")
 
-feladat3()
+#feladat3()
 
+
+def feladat4():
+    try:
+        gondoltSzam=random.randrange(1,6)
+        bekertSzam=0
+
+        while bekertSzam<1 or bekertSzam>5:
+            bekertSzam=int(input("Adj meg egy számot 1 és 5 között! "))
+
+        if (gondoltSzam>bekertSzam):
+            print(f"A gép nagyobb számra gondolt: {gondoltSzam}")
+        elif (gondoltSzam<bekertSzam):
+            print(f"A gép kisebb számra gondolt: {gondoltSzam}")
+        else:
+            print(f"Eltaláltad a gép által gondolt számot! {gondoltSzam}")
+    except:
+        print("Nem jó értéket adtál meg.")
+
+#feladat4()
+"""Ciklusok:
+A program minden alkalommal pontosan tájékoztassa a felhasználót, hogy mit kell tennie!
+
+1. Feladat
+Írj egy programot, amely kiírja a páros számokat 1 és 10 között!"""
+
+def ciklus1():
+    for i in range(1,11):
+        if(i%2==0):
+            print(i)
+
+#ciklus1()
+
+"""2. Feladat
+Írj egy programot, amely csökkenő sorrendben írja ki a számokat 1 és 10 között!"""
+def ciklus2():
+    for i in reversed(range(1,11)):
+        if(i%2==0):
+            print(i)
+
+#ciklus2()
+"""3. Feladat
+Írj egy programot, amely kiírja a páratlan számokat csökkenő sorrendben 1 és 10 között!"""
+def ciklus3():
+    for i in range(10,0,-1):
+        if(i%2!=0):
+            print(i)
+
+#ciklus3()
+
+
+
+        
