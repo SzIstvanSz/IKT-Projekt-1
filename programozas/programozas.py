@@ -104,5 +104,17 @@ def ciklus3():
 #ciklus3()
 
 
+"""4. Feladat
+Írj egy programot, amely a felhasználó által meghatározott alkalommal írja ki a bekért szöveget!"""
+def ciklus4():
+    number = int(input("Kérem az ismétlések számát!"))
+    text = input("Kérem az ismétlődő szöveget!")
+
+    for i in range(number):
+        print(text)
+ciklus4()
+
+
+
 
         
