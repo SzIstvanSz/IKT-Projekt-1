@@ -40,7 +40,7 @@ def feladat3():
 
     import random
 
-    gondoltSzam=random.randrange(1,5)
+    gondoltSzam=random.randrange(1,6)
     bekertSzam=int(input("Adj meg egy számot! "))
     if (0<bekertSzam<6):
         if (gondoltSzam>bekertSzam):
