@@ -112,7 +112,36 @@ def ciklus4():
 
     for i in range(number):
         print(text)
-ciklus4()
+#ciklus4()
+
+
+"""5. Feladat
+Írj egy programot, amely a felhasználótól páros számot kér be. Amennyiben a megadott szám páratlan, újra és újra megtörténik az adatbekérés mindaddig, amíg végül páros számot nem ad meg a felhasználó."""
+
+def ciklus5():
+
+    number=1
+
+    while number%2!=0:
+        number=int(input("Kérek egy számot!"))
+#ciklus5()
+
+"""6. Feladat
+Írj egy programot, amely [1;12] intervallumon állít elő 20 darab véletlenszámot! A képernyőre kizárólag csak a 3-mal oszthatóakat írja ki, és a végén informálja a felhasználót arról is, hány darab ilyen szám volt."""
+
+def ciklus6():
+    import random
+    db=0
+    for i in range(20):
+        rnd=random.randrange(1,13)
+        if(rnd%3==0):
+            print(rnd)
+            db=db+1
+    print("Hárommal osztható számok száma: "+str(db))
+ciklus6()
+
+
+
 
 
 
